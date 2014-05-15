@@ -1,5 +1,5 @@
 /**
- * Created by vitalifichtner on 28.04.14.
+ * Created by sprucewerk on 28.04.14.
  */
 
 alert('huhu');
