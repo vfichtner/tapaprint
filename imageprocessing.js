@@ -1,5 +1,5 @@
 /**
- * Created by vitalifichtner on 06.05.14.
+ * Created by sprucewerk on 06.05.14.
  */
 var im = require('imagemagick');
 
