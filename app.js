@@ -143,8 +143,6 @@ app.post('/print/new', function(req,res){
 
                 res.redirect('/');
             })
-
-
         })
 
         // delete the temporary file, so that the explicitly set temporary upload dir does not get filled with unwanted files
@@ -155,42 +153,6 @@ app.post('/print/new', function(req,res){
 
 });
 
-
-//save new sub image from a print
-app.post('/print/:name/images', function(req,res){
-
-    //var files = req.files.image;
-
-   // console.log('upload multiple images - '+files.length);
-
-
-  //  for(var image in files){
-//        console.log('upload - '+JSON.stringify(image));
-//    }
-
-
-    var form = new formidable.IncomingForm(),
-        files = [],
-        fields = [];
-
-    form.uploadDir = /data/;
-
-    form.on('field', function(field, value) {
-            console.log("sss"+field, value);
-            fields.push([field, value]);
-        })
-        .on('file', function(field, file) {
-            console.log("sss2"+field, file);
-            files.push([field, file]);
-        })
-        .on('end', function() {
-            console.log('-> upload done');
-
-            res.redirect('/show/'+req.params.name);
-        });
-    form.parse(req);
-
-});
 
 
 //save new sub image from a print
@@ -230,15 +192,19 @@ app.post('/print/:name/new', function(req,res){
 
 });
 
-
+//delete print, recursively delete all images
 app.post('/print/remove/:name', function(req, res){
 
     console.log("remove ");
 
-    printProvider.remove({name:req.params.name}, function(error){
+    printProvider.remove({name:req.params.name},
+        function(error){
 
         if(error)
             console.log("Error while removing, error="+error);
+
+            //remove all images from this print
+
 
         res.redirect("/");
     });
