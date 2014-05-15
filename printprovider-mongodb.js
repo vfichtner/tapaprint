@@ -1,5 +1,5 @@
 /**
- * Created by vitalifichtner on 23.04.14.
+ * Created by sprucewerk on 23.04.14.
  */
 
 var Db = require('mongodb').Db;
