@@ -1,0 +1,31 @@
+
+.page-content{
+    margin: 5px;
+}
+
+
+.prints{
+
+}
+
+.bar {
+    height: 18px;
+    background: green;
+}
+
+.print-banner{
+    width:100%;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+}
+
+.print-item{
+    float:left;
+    width:150px;
+    height:150px;
+    margin:5px;
+    overflow: hidden;
+    border: 1px solid gray;
+}
