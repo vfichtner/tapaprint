@@ -1,4 +1,4 @@
-tapaprint
+Tapaprint
 =========
 
 Make your images smart 
@@ -8,9 +8,20 @@ with NFC to your Raspberry Pi.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 The MIT License (MIT)
 
-Copyright (c) 2914 sprucewerk
+Copyright (c) 2014 sprucewerk
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
