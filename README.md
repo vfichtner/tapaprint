@@ -11,14 +11,6 @@ with NFC to your Raspberry Pi.
 
 
 
-
-
-
-
-
-
-
-
 The MIT License (MIT)
 
 Copyright (c) 2014 sprucewerk
