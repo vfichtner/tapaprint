@@ -14,27 +14,25 @@ block content
     div.page-content
 
         #gallery.prints
+                a(href="/image/"+print.path, alt=image)
+                    div.print-item(style="background: url(/image/small/"+print.path+") 50% 50% no-repeat;")
 
-            a(href="/image/"+print.path, alt=image)
-                div.print-item(style="background: url(/image/small/"+print.path+") 50% 50% no-repeat;")
+                if print.data
+                    each image in print.data
+                        div.print-item
+                            a(href="/image/"+image, alt=image)
+                                 div(style="background: url(/image/small/"+image+") 50% 50% no-repeat;width:150px;height:150px;")
 
-
-            if print.data
-                each image in print.data
-                     a(href="/image/"+image, alt=image)
-                         div.print-item(style="background: url(/image/small/"+image+") 50% 50% no-repeat;")
-
-                     div(style="display:none;")
-                        form(method='post', action='/print/'+print.name+'/remove/'+image)
-                                input(type="submit", value="Löschen", class=['btn','btn-link'])
-
-
-        div(style="clear:both;")
+                             div(class=["print-item-navbar","hidden-xs"])
+                                form(method='post', action='/print/'+print.name+'/remove/'+image)
+                                        input(type="submit", value="Bild löschen", class=['btn','btn-xs','btn-link'])
 
 
+
+        div(style="clear:both;",class=["hidden-xs"])
 
             div
-                label Weiteres Bild hochladen (jquery)
+                label Weitere Bilder hochladen
                 input(id="fileupload", type="file", name="image", data-url='/print/'+print.name+'/new', class="form-control", multiple="multiple")
 
                 div( id="progress")
