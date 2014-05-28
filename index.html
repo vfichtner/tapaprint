@@ -9,6 +9,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link href="css/tapaprint-main.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -16,31 +18,20 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
     <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
     </script>
     <script type="text/javascript">
-        try{
+        try {
             var pageTracker = _gat._getTracker("UA-51084760-1");
             pageTracker._trackPageview();
-        } catch(err) {}
+        } catch (err) {
+        }
     </script>
 </head>
 <body>
-
-<style type="text/css">
-
-    h1 span {
-        color: white;
-        font: bold 24px/45px Helvetica, Sans-Serif;
-        letter-spacing: -1px;
-        background: rgb(0, 0, 0); /* fallback color */
-        background: rgba(0, 0, 0, 0.6);
-        padding: 10px;
-    }
-
-</style>
 
 
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -54,145 +45,123 @@
             </button>
             <a class="navbar-brand" href="#">Tapaprint</a>
         </div>
-        <div class="collapse navbar-collapse navbar-right">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
+
+        <!--/.nav-collapse -->
     </div>
 </div>
 
 
-<img id="headerimg" class="hidden-xs" src="img/IMG_8830_1200.jpg"
-     style="position: fixed;left: 0px;top:50px;min-width:1200px;width: 100%; height: 500px;z-index: -2;"/>
-<img id="headerimg2" class="visible-xs" src="img/IMG_8830_768.jpg"
-     style="position: fixed;left: 0px;top:50px;min-width:900px;width: 100%; height: 500px;z-index: -2;"/>
+<img id="headerimg" class="banner-image hidden-xs" src="img/IMG_8830_1200.jpg" />
+<img id="headerimg2" class="banner-image visible-xs" src="img/IMG_8830_768.jpg"/>
 
 
-
-<div style="margin-top: 50px;
-            background: rgba(0, 0, 0, 0.7);
-            color:white;
-            height: 500px;">
+<div class="banner">
 
     <div class="container">
 
-            <div style="margin-top: 130px;
-                        text-align: center;
-                        ">
+        <div class="intro">
 
-                <div style="font-size: 45pt;font-family: 'Lato';">MAKE YOUR IMAGES SMART</div>
+            <div class="intro-text">MAKE YOUR IMAGES SMART</div>
 
-                    <p style="font-size: 17pt;font-family: 'Lato';">
-                        Gib deinen Bilder eine ID und verbinde sie so mit dem Raspberry Pi.
-                        <br>
-                        NFC, HTML5, Node.js, MongoDB
-                        <br>
-                        Open Source
-                    </p>
-            </div>
+            <p>
+                Gib deinen Bilder eine ID und verbinde sie so mit dem Raspberry Pi.
+                <br>
+                NFC, HTML5, Node.js, MongoDB
+                <br>
+                Open Source
+            </p>
+        </div>
 
 
     </div>
+
+
+
 </div>
 
 <div style="background-color: white;">
 
-<div  class="container">
+    <div class="container">
 
 
-    <div style="margin-top: 50px;text-align: center;" class="row">
+        <div style="margin-top: 50px;text-align: center;" class="row">
 
 
-        <div style="text-align: center;" class="col-md-4">
-            <div >
-                <img src="img/icon_nfc.svg" width="150"/>
+            <div style="text-align: center;" class="col-md-4">
+                <div>
+                    <img src="img/icon_nfc.svg" width="150"/>
+                </div>
+                <h2>Internet of Things</h2>
+
+                <p style="color:gray;" class="lead">
+                    IoT bezeichnet die Verknüpfung eindeutig identifizierbarer physischer Objekte
+                    mit einer virtuellen Repräsentation.
+                </p>
             </div>
-            <h2>Internet of Things</h2>
-            <p style="color:gray;" class="lead">
-                IoT bezeichnet die Verknüpfung eindeutig identifizierbarer physischer Objekte
-                mit einer virtuellen Repräsentation.
-            </p>
+
+
+            <div style="text-align: center;" class="col-md-4">
+                <div style="height: 150px;">
+                    <img src="img/icon_opensource.svg" width="200"/>
+                </div>
+                <h2>Open Source</h2>
+
+                <p style="color:gray;" class="lead">
+
+                    Tapaprint ist als Open Source unter der MIT-Lizenz veröffentlicht.
+                    Diese erlaubt den Einsatz der Software auch für kommerzielle Zwecke.
+
+                </p>
+
+            </div>
+
+
+            <div style="text-align: center;" class="col-md-4">
+                <div style="height: 150px;">
+                    <img src="img/icon_download.svg" width="150"/>
+                </div>
+                <h2>Download</h2>
+
+                <p style="color:gray;" class="lead">
+
+                    Lade Tapaprint völlig lizenzkostenfrei herunter.
+                </p>
+            </div>
+
         </div>
 
 
-        <div style="text-align: center;" class="col-md-4">
-            <div style="height: 150px;">
-                <img src="img/icon_opensource.svg" width="200"/>
+
+        <div style="margin-top: 80px;margin-bottom: 80px;" class="row">
+
+
+            <div class="col-md-5" style="margin-top: 30px;vertical-align: middle;">
+                <img src="img/IMG_0346.jpg" class="rpi-image"/>
             </div>
-            <h2>Open Source</h2>
-            <p style="color:gray;" class="lead">
+            <div class="col-md-7">
 
-                Tapaprint ist als Open Source unter der MIT-Lizenz veröffentlicht.
-                Diese erlaubt den Einsatz der Software auch für kommerzielle Zwecke.
+                <h2>Easy, simple and exciting</h2>
 
-            </p>
+                <p class="lead">
+                    Das Ziel von <b>Internet of Things</b> ist es, die Informationslücke zwischen der realen und
+                    digitalen Welt zu minimieren.
+                    Tapaprint bietet eine Lösung um Printmedien mit digitalen Bilder zu verbinden.
+
+                    <br/>
+                    <br/>
+
+                    Mit Hilfe eines NFC-Tags wird einem Bild eine eindeutige ID zugewiesen. Berührt man mit dem
+                    Smartphone das getaggte
+                    Bild so öffnet sich die dazugehörige Bildergallerie auf dem Smartphone.
+
+                </p>
+            </div>
 
         </div>
-
-
-        <div style="text-align: center;" class="col-md-4">
-            <div style="height: 150px;">
-                <img src="img/icon_download.svg" width="150"/>
-            </div>
-            <h2>Download</h2>
-            <p style="color:gray;" class="lead">
-
-                Lade Tapaprint völlig lizenzkostenfrei herunter.
-            </p>
-        </div>
-
-
-
 
 
     </div>
 
-
-
-    <div style="margin-top: 150px;">
-
-        <div class="row">
-
-
-        <div class="col-md-5" style="margin-top: 30px;vertical-align: middle;">
-            <img src="img/IMG_0346.jpg" width="400"/>
-        </div>
-        <div class="col-md-7">
-
-            <h2>Easy, simple and exciting</h2>
-
-            <p class="lead">
-                Das Ziel von <b>Internet of Things</b> ist es, die Informationslücke zwischen der realen und digitalen Welt zu minimieren.
-                Tapaprint bietet eine Lösung um Printmedien mit digitalen Bilder zu verbinden.
-
-                <br/>
-                <br/>
-
-                Mit Hilfe eines NFC-Tags wird einem Bild eine eindeutige ID zugewiesen. Berührt man mit dem Smartphone das getaggte
-                Bild so öffnet sich die dazugehörige Bildergallerie auf dem Smartphone.
-
-            </p>
-        </div>
-        </div>
-
-
-    </div>
-
-    <div style="margin-top: 150px;">
-
-    </div>
-
-
-
-
-
-
-</div>
-    <!-- /.container
-
-    https://www.flickr.com/photos/32716504@N03/8380889887/sizes/m/in/photolist-dLAfzv-cG1PgC-e9pzTb-dFsuon-bUvrNo-ddeL4h-bdb46X-cdMqem-fkBNdh-bTvLDr-bUF6mg-bAwRz7-ddKo1o-cPef4h-cpDyRo-crywvE-cpDyGh-bDk3Aa-eyFVtF-bxhQoN-bpmktb-cXGjNS-bCh2NK-do8w8n-mZYC1h-d7Hc7A-g3tsLo-c5MSNd-icydaZ-dA2SMG-bPhDir-ef7yja-chczpS-cQtpgh-bprrAJ-ffH6Sd-ae8jPs-e7strF-gizA8p-dzWp1i-de9r62-e7nMFy-ejdhab-cmVrXS-dhjtH2-cnV1bY-cRcLJ7-bnpw3r-eizzi7-eyK5wm/
-    -->
 </div>
 
 <div class="modal-footer" style="text-align: center;color: gray;">
